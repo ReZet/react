@@ -1,3 +1,91 @@
+body {
+	background: url(../img/bg_8bit.gif);
+	background-attachment: fixed;
+	background-position: center right;
+	background-size: cover;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 4px 4px 0px #000;
+	color: #fff;
+}
+
+
+::-webkit-progress-bar {
+    background: transparent;
+}
+::-webkit-progress-value {
+    background: greenyellow;
+}
+::-moz-progress-bar {
+    background: greenyellow;
+}
+
+progress {
+	border: 4px solid #fff;
+	box-shadow: 4px 4px 0 #000;
+	height: 40px;
+	background: transparent;
+}
+
+h1 {
+	text-align: center;
+	color: #d00;
+	line-height: 2;
+}
+
+h1 .uppercase {
+	text-transform: uppercase;
+	background: white;
+	padding: 0 1em;
+	display: table;
+	color: #d00;
+	margin: 0 auto;
+	box-shadow: 4px 4px 0 #000;	
+}
+
+.links {
+	list-style: none;
+}
+
+.links li {
+	position: relative;
+}
+
+.links li a {	
+	text-shadow: -2px -2px 0px #fff, 2px 2px 0px #000;
+	color: transparent;
+	font-size: 24px;
+	text-decoration: none;
+	display: block;
+	transition: text-shadow 0.2s ease-in;
+	line-height: 2;
+	padding-left: 2em;
+}
+
+.links li:hover a {
+	color: transparent;
+	text-shadow:  -4px -4px 0px #fff, 4px 4px 0px #000;
+}
+
+.links li a::before {
+	content: '👉';
+	position: absolute;
+	color: transparent;
+	left: 0;
+	top: -0.33em;
+	opacity: 0;
+	transition: opacity 0.2s ease-in;	
+}
+
+.links li:hover a::before {
+	opacity: 1;
+	/*transition: opacity 0.2s ease-in;	*/
+}
+
 .bg_video {
 	position: fixed;
 	top: 50%;
